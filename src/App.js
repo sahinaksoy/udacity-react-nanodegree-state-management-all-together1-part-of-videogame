@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AddUser from './AddUserComponent';
- 
+import UserList from './UserListComponent';
 
 class App extends Component {
   state = {
@@ -24,7 +24,7 @@ class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <AddUser users={this.state.users} onAddUser={this.createContact} />
-
+        <UserList users={this.state.users} />
         <br />
         2020
       </div>
